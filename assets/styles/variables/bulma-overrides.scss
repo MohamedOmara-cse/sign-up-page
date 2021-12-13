@@ -1,0 +1,103 @@
+// Import Bulma's core
+@import '~bulma/sass/utilities/_all';
+
+// Layout
+// $container-max-width: 1024px;
+
+// Fonts
+// $body-line-height: 1.6em;
+// $body-size: 18px;
+// $family-primary: 'Open Sans'; // 'Source Sans Pro';
+// $title-family: 'Open Sans'; // 'Open Sans';
+// $subtitle-family: $title-family;
+
+// Set your colors
+$primary: #00ff66;
+// $primary-light: findLightColor($primary);
+// $primary-dark: findDarkColor($primary);
+// $primary-invert: findColorInvert($primary);
+// $twitter: #4099ff;
+// $twitter-invert: findColorInvert($twitter);
+// $title-color: #354052;
+
+// Inputs
+$input-color: #ffffff;
+$input-background-color: #1C1924;
+$input-border-color: #1C1924;
+$input-hover-border-color: #333333;
+$input-focus-border-color: #333333;
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(
+  (
+    'white': (
+      $white,
+      $black,
+    ),
+    'black': (
+      $black,
+      $white,
+    ),
+    'light': (
+      $light,
+      $light-invert,
+    ),
+    'dark': (
+      $dark,
+      $dark-invert,
+    ),
+    'primary': (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark,
+    ),
+    'link': (
+      $link,
+      $link-invert,
+      $link-light,
+      $link-dark,
+    ),
+    'info': (
+      $info,
+      $info-invert,
+      $info-light,
+      $info-dark,
+    ),
+    'success': (
+      $success,
+      $success-invert,
+      $success-light,
+      $success-dark,
+    ),
+    'warning': (
+      $warning,
+      $warning-invert,
+      $warning-light,
+      $warning-dark,
+    ),
+    'danger': (
+      $danger,
+      $danger-invert,
+      $danger-light,
+      $danger-dark,
+    ),
+  ),
+  $custom-colors
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Navbar
+$navbar-background-color: transparent;
+
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
