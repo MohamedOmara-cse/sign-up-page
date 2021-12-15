@@ -49,7 +49,7 @@ export default {
 <style>
 body {
   background-color: #000;
-  font-size: 12px;
+  font-size: 20px;
   min-height: 100vh;
 }
 
@@ -59,6 +59,11 @@ table th {
   color: #626262;
 }
 
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-block-color: white;
+}
 a {
   color: #fff;
 }

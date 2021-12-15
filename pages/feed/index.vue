@@ -55,7 +55,7 @@
           </p>
         </div>
         <section class="b-tooltips">
-          <b-tooltip label="Strength = Bullish Signals - Bearish Signals"position="is-right">
+          <b-tooltip label="Strength = Bullish Signals - Bearish Signals" position="is-right">
             <div class="column">
               <p>Strength
                 <!-- <b-icon icon="question-mark-circle-outline" size="is-small"></b-icon> -->

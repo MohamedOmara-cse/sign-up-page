@@ -23,8 +23,37 @@
       expanded
       >Sign in</b-button
     >
-    <b-field label="By signing in, you agree to be bound by StormIQ's Legal Disclaimer:">
-      <a href="/disclaimer" style="color: #0645AD; font-size: 16px;" target="_blank" rel="noopener noreferrer"> Legal Dislaimer
+    <b-field
+      id="by"
+      label="By signing in, you agree to be bound by StormIQ's Legal Disclaimer:"
+    >
+      <a
+        href="/disclaimer"
+        style="color: #0645ad; font-size: 14px"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Legal Dislaimer
+      </a>
+    </b-field>
+    <b-field class="smallText" id="signUpLink">
+      <a
+        href="/signup"
+        style="color: green; font-size: 16px"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Sign Up
+      </a>
+    </b-field>
+    <b-field class="smallText" id="signUpLink">
+      <a
+        href="/resetPasswd"
+        style="color: green; font-size: 16px"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        reset password
       </a>
     </b-field>
   </form>
@@ -73,7 +102,8 @@ export default {
 
       this.errorMessage = null
       this.isLoading = true
-
+      console.log(this.email)
+      console.log(this.password)
       try {
         const response = await api.post('/auth/login', {
           email: this.email,
@@ -99,3 +129,14 @@ export default {
   },
 }
 </script>
+<style scoped>
+#signUpLink {
+  text-align: center;
+}
+button {
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: green;
+  border-color: green;
+}
+</style>
